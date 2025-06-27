@@ -22,7 +22,7 @@ function afa_duotone_print_markup() {
 	do_action( 'afa_duotone_printed' );
 
 	?>
-	<!-- AFA Duotone filter (orange / maroon) -->
+	<!-- AFA Duotone filter (orange / maroon) via https://github.com/nsitu/afa-duotone/  -->
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0"
 	     width="0" height="0" focusable="false" role="none"
 	     style="visibility:hidden;position:absolute;left:-9999px;overflow:hidden;">
@@ -45,6 +45,8 @@ function afa_duotone_print_markup() {
 	</svg>
 	<style>
 	  .afa-duotone{ filter:url(#afa-duotone); }
+	  /* the following line adds the duotone effect to all  background images in the elementor slider  */
+	  .swiper-slide-bg{ filter:url(#afa-duotone); }
 	</style>
 	<?php
 }
